@@ -1,5 +1,15 @@
-import 'package:learn1/learn1.dart' as learn1;
+//without considering the nul value
 
-void main(List<String> arguments) {
-  print('Hello world: ${learn1.calculate()}!');
+import 'dart:io';
+
+void main() {
+  print('enter two numbers:');
+
+  var input1 = stdin.readLineSync();
+  var input2 = stdin.readLineSync();
+
+  var num1 = int.parse(input1!);
+  var num2 = int.parse(input2!);
+
+  print('SUM = ${num1 + num2}');
 }
