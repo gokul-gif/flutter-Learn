@@ -1,7 +1,9 @@
-//for loop
+//while loop
 
 void main() {
-  for (var i = 0; i < 11; i++) {
+  var i = 0;
+  while (i < 11) {
     print(i);
+    i++;
   }
 }
